@@ -23,6 +23,6 @@ console.log(calculad.divi(num,num2))
 calcular("sumar", 6, 3);
 calcular("resta", 6, 5);
 calcular("multi", 6, 3);
-calcular("divi", 6, 5);
+calcular("divi", 0, 5);
 
 
