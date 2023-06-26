@@ -1,25 +1,36 @@
-<!DOCTYPE html>
 <html>
+  <head>
+    <title>Reloj con Javascript</title>
+    <link rel="stylesheet" href="estilos.css">
+  </head>
 
-<head>
-	<title>Ejercicio-4</title>
-	<meta charset="UTF-8" />
-</head>
-
-<body onload="mueveReloj()" >
-
-	
-	<h3>Hora Actual</h3>
-	<form name="form_reloj">
-		
-	</form>
+  <section class="fondo">
+  <body onload="mueveReloj()">
 
 
-	<h4 id="valor"></h4>
+    <div id="div">
+        <h3 id="letras"> <span id="colorr"> MON </span>  TUE WEN THU FRI SAT  SUN   </h3>
 
-	<p>hola</p>
+    <form name="form_reloj">
+      <input id="texto"
+        type="text"
+        name="reloj"
+        size="80"
+        class="form"
+        onfocus="window.document.form_reloj.reloj.blur()"
+      />
 
-	
-</body>
-<script src="index.js" type="module"></script>
+    </form>
+
+
+    </div>
+    <div>
+      <p class="date"></p>
+      <p id="fecha"></p>
+    </div>
+
+
+</section>
+  </body>
+  <script src="index.js"></script>
 </html>

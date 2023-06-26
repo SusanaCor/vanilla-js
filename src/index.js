@@ -1,68 +1,41 @@
-//Inserte el código aquí
-
-
-// function mueveReloj(){
-
-//     let h4=document.getElementById("valor")
-
-//    let momentoActual = new Date()
-//     let hora = momentoActual.getHours()
-//     let minuto = momentoActual.getMinutes()
-//     let segundo = momentoActual.getSeconds()
-
-//    let horaImprimible = hora + " : " + minuto + " : " + segundo
-
-//     h4.innerHTML = horaImprimible
-//     console.log(horaImprimible)
-
-// return horaImprimible
-// }
-// let hora1=mueveReloj()
-// function actualizar(hora1){
-
-//     return hora1
-// updateTime()
-// setInterval(actualizar(hora1),1000)
-// }
-//ejercicio 2
-
-
-function ObtenerListaUsuarios() {
-    fetch("http://localhost:3000/users")
-    .then((response) => response.json())
-    .then((data) =>{
-        console.log("Lista de usuarios",data);
-
-        
-
-   })
-   .catch((error)=>{
-    console.error("Error al obtener la lista de usuarios", error)
-   })
-    
-}
-const getUsuarios = () =>{
-    return new Promise((resolve) =>{
-    
-    setTimeout (() =>{
-     resolve (ObtenerListaUsuarios());
-     }, 3500);
-      
-    });
-}
-async function Datos (){
-    try {
-        const usuariosD = await getUsuarios();
-        console.log(usuariosD);
-    } catch (error) {
-        console.log(error);
-    }
+function mueveReloj(){
+    momentoActual = new Date()
+    hora = momentoActual.getHours()
+    minuto = momentoActual.getMinutes()
+    segundo = momentoActual.getSeconds()
+    dia = momentoActual.getDay()
   
-}
-Datos();
-
-
-
-
-
-
+    str_segundo = new String (segundo)
+    if (str_segundo.length == 1)
+       segundo = "0" + segundo
+  
+    str_minuto = new String (minuto)
+    if (str_minuto.length == 1)
+       minuto = "0" + minuto
+  
+    str_hora = new String (hora)
+    if (str_hora.length == 1)
+       hora = "0" + hora
+  
+       str_dia = new String (dia)
+       if (str_hora.length == 1)
+          dia = "0" + dia
+  
+  
+  
+          let hoy= new Date().toLocaleDateString('en-ES')
+  
+          console.log(hoy)
+  
+  console.log(hoy)
+  
+  let fecha=document.getElementById("fecha")
+  
+    horaImprimible = hora + " : " + minuto + " : " + segundo 
+  
+    fecha.innerText= hoy
+  
+    document.form_reloj.reloj.value = horaImprimible
+  
+    setTimeout("mueveReloj()",1000)
+  }

@@ -1,0 +1,56 @@
+.fondo {
+    background-color: #616A6B;
+  
+    width: 660px;
+    margin-left: 300px;
+    height: 500px;
+    border-radius: 10%;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/back_pic/03/88/81/5457d757507d6ad.jpg);
+  }
+  
+  #texto{
+   margin-left: 5px;
+  }
+  
+  .form {color: #ffffff;
+  width: 650px;
+  height: 150px;
+  font-size: 100px;
+  font-family: cursive;
+  margin-left: 70px ;
+  margin-top: 100px;
+  
+  border: none;
+  margin-bottom: 100px;
+  margin-right: 50px;
+  text-align: center;
+  background-color: transparent;
+  
+  
+  }
+  
+  #fecha{
+  
+      width: 100px;
+      color: white;
+      margin-left: 280px;
+      height: 50px;
+      font-family: cursive;
+      font-size: 18px;
+      margin-top: -75px;
+  
+  }
+  
+  
+  #letras{
+      color: white;
+      margin-bottom: 25px;
+      margin-left:80px;
+      margin-top: 100px;
+  }
+  #colorr{
+      color: #FFFF99;
+  }
+  body{
+      background-color:#707B7C ;
+  }
